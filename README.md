@@ -1,1 +1,3 @@
 # megabytes
+Megabytes brings to you biscuits and snacks, infused with the essence of youthfulness depicted through our colour scheme. 
+We plan to incorporate many other visual and auditory cues, for instance, we will use crunch sound for animations and use customised hover effects that’s guaranteed to hold the user’s attention. On product specific pages, the main colour is based on the flavour of the snack. Additionally, the navigation bar and footer will disappear only on scroll, to ensure full focus of the page is on the product. The cart and payment pages are also designed to be very customer-friendly and clean to make shopping an easier experience!
