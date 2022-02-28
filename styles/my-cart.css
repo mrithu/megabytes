@@ -1,0 +1,60 @@
+/* My Cart */
+
+.mycart {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.mycart h3 {
+    border-bottom: 1px solid var(--black);
+    background: transparent url(../assets/icon-cart.jpg) no-repeat;
+    padding: 0 0 1rem 2rem;
+    margin-top: 0;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.cart-item img {
+    margin: 0 1rem 0 0;
+    width: 5rem;
+}
+
+.item-detail {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
+.item-detail .label,
+.subtotal-row .label  {
+    color: var(--labelTextColor);
+    margin-right: 0.5rem;
+}
+
+.subtotal-row {
+    border: 1px solid var(--black);
+    border-width: 1px 0;
+    padding: 1rem 0;
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+.coupon h3 {
+    background: transparent url(../assets/icon-coupon.jpeg) no-repeat;
+    padding: 0 0 1rem 2rem;
+    margin-top: 0;
+}
+
+.coupon input {
+    background-color: var(--bodyBg);
+    border-radius: 0.5rem;
+    border: none;
+    line-height: 1.5rem;
+    padding: 0.5rem 1rem;
+}

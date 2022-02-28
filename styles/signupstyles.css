@@ -1,0 +1,285 @@
+*{
+    margin: 0px 0px 0px 0px;
+}
+
+nav{
+    height: 10vh;
+    background-color: #3E3D3D;
+}
+
+.links{
+    display: flex;
+    font-family: Avenir, sans-serif;
+    list-style: none;
+    width: 50%;
+    height:100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+}
+
+.links li{
+    width: 20%;
+    height: inherit;
+}
+
+.links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    width:100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links li a:hover{
+    background-color:#D9615D;
+    color: #3E3D3D;
+    transition: all 0.2s ease-in;
+}
+
+*{
+    margin: 0px 0px 0px 0px;
+}
+
+nav{
+    height: 10vh;
+    background-color: #3E3D3D;
+}
+
+.links{
+    display: flex;
+    font-family: Avenir, sans-serif;
+    list-style: none;
+    width: 50%;
+    height:100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+}
+
+.links li{
+    width: 20%;
+    height: inherit;
+
+
+}
+.links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    width:100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links li a:hover{
+    background-color:#D9615D;
+    color: #3E3D3D;
+    transition: all 0.2s ease-in;
+}
+
+.deco1 img{
+  position: fixed;
+  height: 300px;
+  width: auto;
+  bottom: 0px;
+  right: 0px;
+  opacity: 0.9;
+  z-index: -1;
+}
+
+.deco2 img{
+  position: fixed;
+  height: 300px;
+  width: auto;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.9;
+  z-index: -1;
+}
+
+.container {  display: grid;
+  grid-template-columns: 0.7fr 1fr 0.7fr;
+  grid-template-rows: 0.7fr 1.7fr 0.7fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    ". Signup ."
+    ". . .";
+    width: 100vw;
+    height: 100vh;
+}
+
+.Signup {
+  background-color: white;
+  grid-area: Signup;
+ }
+
+.Signupheading{
+  font-family: Avenir, sans-serif;
+  text-align: center;
+  padding: 15px 5px;
+}
+
+.Separator{
+  background-color: #C0C0C0;
+  height: 1px;
+  border: 0;
+}
+
+.inputfield{
+  align: center;
+  width: 70%;
+}
+
+input {
+  border-style: none;
+  background: transparent;
+  outline: none;
+  font-family: Avenir, sans-serif;
+  font-size: 20px;
+  padding-top: 30px;
+}
+
+form{
+  font-family: Avenir, sans-serif;
+  text-align: center;
+}
+
+button{
+  font-family: Avenir, sans-serif;
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+.login-password{
+  align-items: center;
+  align: center;
+}
+
+.Submitbutton {
+   position: relative;
+}
+
+.Submitbutton input.image-hover {
+   position: absolute;
+   top: 0px;
+   right: 0;
+   left: 220px;
+   bottom: 0;
+   opacity: 0;
+   transition: opacity .2s;
+}
+
+.Submitbutton:hover input.image-hover{
+  opacity: 1;
+}
+
+.Submitbutton:hover input.image{
+  opacity: 0;
+}
+
+.login {
+  text-align: center;
+  font-family: Avenir, sans-serif;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+
+@media screen and (max-width: 768px){
+
+    .burgeritem{
+        width: 30px;
+        height:3px;
+        background: white;
+        margin: 5px;
+    }
+    nav{
+        position: relative;
+
+    }
+
+    .burger-menu{
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%,-50%);
+        z-index: 2;
+    }
+
+    .links{
+        position:fixed;
+        background: #3E3D3D;
+        height:100vh;
+        width:100%;
+        flex-direction: column;
+        z-index: 1;
+
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path: circle(100px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+    .links.open {
+        clip-path: circle(1100px at 90% -10%);
+        -webkit-clip-path: circle(1100px at 90% -10%);
+        pointer-events: all;
+    }
+
+
+    .first{
+        flex-direction: column;
+    }
+
+    .links li{
+        width:100%;
+    }
+
+    .links li a{
+        font-size: 20px;
+
+    }
+    .links li a:hover{
+        background-color:#96CEB4;
+        color: #3E3D3D;
+        width:100%;
+        transition: all 0.2s ease-in;
+    }
+    .container{
+      display:grid;
+      gap: 20px;
+      grid-template-columns: 0.1fr 3fr 0.1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas:
+        ". Login ."
+        ".";
+    }
+
+    .Submitbutton input.image-hover {
+       position: absolute;
+       top: 0;
+       right: 0;
+       left: 135px;
+       bottom: 0;
+       opacity: 0;
+       transition: opacity .2s;
+    }
+
+    .signup {
+      text-align: center;
+      font-family: Avenir, sans-serif;
+      padding-top: 15px;
+      padding-bottom: 30px;
+    }
+
+
+}

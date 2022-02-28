@@ -1,0 +1,243 @@
+*{
+    margin: 0px 0px 0px 0px;
+}
+
+nav{
+    height: 10vh;
+    background-color: #3E3D3D;
+}
+
+.links{
+    display: flex;
+    font-family: Avenir, sans-serif;
+    list-style: none;
+    width: 50%;
+    height:100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+}
+
+.links li{
+    width: 20%;
+    height: inherit;
+
+
+}
+.links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    width:100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links li a:hover{
+    background-color:#75A9F7;
+    color: #3E3D3D;
+    transition: all 0.2s ease-in;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 0.5fr 1.2fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Details Products";
+  width: 100vw;
+  height: 100vh;
+}
+
+.Products {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". ."
+    ". .";
+  grid-area: Products;
+}
+
+.Details {
+  background-color:white;
+  padding: 25px 50px 50px 50px;
+   font-family: Avenir, sans-serif;
+  grid-area: Details;
+}
+
+.Products img{
+    object-fit: cover;
+     width:200px;
+     height:200px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    grid-template-areas:
+      "P P"
+      "P P";
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+
+.P{
+  justify-self: center;
+  padding: 25px 15px 20px 50px;
+}
+
+.P img{
+  transition: transform .5s ease
+}
+
+.P img:hover {
+  transform: scale(1.2);
+}
+
+.P div{
+ font-family: Avenir, sans-serif;
+ text-align: center;
+ visibility: visible;
+}
+
+.P p{
+ font-family: Avenir, sans-serif;
+ padding-top: 10px;
+ align-items: center;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear;
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+.P:hover p{
+ visibility: visible;
+ text-align:center;
+ justify-content: center;
+ opacity: 0.9;
+}
+
+
+.deco img{
+  position: fixed;
+  height: 300px;
+  width: auto;
+  bottom: 0px;
+  right: 0px;
+  opacity: 0.9;
+  z-index: -1;
+}
+
+@media screen and (max-width: 768px){
+
+  .burgeritem{
+      width: 30px;
+      height:3px;
+      background: white;
+      margin: 5px;
+  }
+  nav{
+      position: relative;
+
+  }
+  .burger-menu{
+      position: absolute;
+      cursor: pointer;
+      right: 5%;
+      top: 50%;
+      transform: translate(-5%,-50%);
+      z-index: 2;
+  }
+
+  .links{
+      position:fixed;
+      background: #3E3D3D;
+      height:100vh;
+      width:100%;
+      flex-direction: column;
+      z-index: 1;
+
+      clip-path: circle(100px at 90% -10%);
+      -webkit-clip-path: circle(100px at 90% -10%);
+      transition: all 1s ease-out;
+      pointer-events: none;
+  }
+  .links.open {
+      clip-path: circle(1100px at 90% -10%);
+      -webkit-clip-path: circle(1100px at 90% -10%);
+      pointer-events: all;
+  }
+
+
+  .first{
+      flex-direction: column;
+  }
+
+  .links li{
+      width:100%;
+  }
+
+  .links li a{
+      font-size: 20px;
+
+  }
+    .links li a:hover{
+        background-color:#75A9F7;
+        color: #3E3D3D;
+        width:100%;
+        transition: all 0.2s ease-in;
+    }
+
+    .container{
+      display:grid;
+      gap: 20px;
+      grid-template-columns: 2fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas:
+        "Details"
+        "Products";
+    }
+
+    .Products{
+      display:grid;
+      grid-template-columns: 2fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 20px;
+      grid-template-areas:
+        "P"
+        "P"
+        "P"
+        "P";
+      grid-area: Products;
+    }
+
+    .Products img{
+      display: grid;
+      gap:20px;
+      grid-template-areas:
+        "P"
+        "P"
+        "P"
+        "P";
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+    }
+
+    .deco img{
+      position: fixed;
+      height: 190px;
+      width: auto;
+      bottom: 0px;
+      right: 0px;
+      opacity: 0.9;
+    }
+
+}

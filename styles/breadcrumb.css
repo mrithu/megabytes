@@ -1,0 +1,37 @@
+.breadcrumb {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.breadcrumb ul {
+    display: flex;
+    background: transparent url(../assets/black-dot.gif) repeat-x 0 2.5rem;
+}
+
+.breadcrumb li {
+    background: transparent url(../assets/stepper.jpeg) no-repeat;
+    margin: 0 5rem;
+    padding-top: 5.5rem;
+    text-align: center;
+    font-weight: 900;
+}
+
+.breadcrumb li.active {
+    background-image: url(../assets/stepper-active.jpeg);
+}
+
+.breadcrumb li:first-child{
+    background-color: var(--bodyBg); 
+    margin-left: 0;
+}
+
+.breadcrumb li:last-child{
+    margin-right: 0;
+}
+
+.breadcrumb span {
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+}

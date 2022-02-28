@@ -1,0 +1,10 @@
+/* Variables */
+:root {
+    --bodyBg: #ffeead;
+    --headerGray: #3e3d3d;
+    --labelTextColor: #666;
+    --white: #fff;
+    --black: #000;
+    --btnPrimaryBgColor: rgba(44, 171, 89, 0.7);
+    --siteMaxWidth: 1024px;
+}

@@ -1,0 +1,23 @@
+.footer{
+    
+    background-color: #3E3D3D;
+    width: 100vw;
+    height: 10vh;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:30px;
+    padding:20px;
+    
+}
+
+.socials{
+    display:flex;
+    gap:30px;
+
+}
+.footer a{
+    color: white;
+    text-decoration: none;
+}
